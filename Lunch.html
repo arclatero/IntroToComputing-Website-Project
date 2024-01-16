@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="styles2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+    <title>Filipino Food Recipes</title>
+   
+</head>
+
+<body>
+	<nav class = "Heading">
+		<div class="logo"><h1>Filipino Food Recipes</h1></div>
+		<ul class="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Breakfast.html">Breakfast</a></li>
+			<li><a href="Lunch.html" class="active">Lunch</a></li>
+			<li><a href="Dinner.html">Dinner</a></li>
+		</ul>
+	</nav>
+
+    <!-- for Lunch -->
+
+	<section class="featured-recipes">
+		<div class="recipe" data-title="Lumpiang Shanghai" 
+						data-description="
+						Ingredients:
+							1/2 kg ground pork
+							1 cup carrots, finely grated
+							1 cup green onions, chopped
+							1 onion, minced
+							2 cloves garlic, minced
+							Salt and pepper to taste
+							Lumpia wrappers (spring roll wrappers)
+							Cooking oil for frying
+						Instructions:
+							In a bowl, mix ground pork, carrots, green onions, onion, garlic, salt, and pepper.
+							Place a spoonful of the mixture on a lumpia wrapper and roll it tightly.
+							Seal the edges with a bit of water.
+							Heat oil in a pan and fry the lumpia until golden brown.
+							Drain excess oil on paper towels.
+							Serve hot with sweet and sour sauce." 
+				data-image="C:\Recipe Website Final\Images\L1.jpg">
+			<img src="Images/L1.jpg" alt="Recipe 1" onclick="openModal(this)">
+			<h3>Lumpiang Shanghai</h3>
+			<button onclick="openModal(this)">View Recipe</button>
+		</div>
+	
+		<div class="recipe" data-title="Bola Bola" 
+						data-description="
+						Ingredients:
+							1/2 kg ground pork
+							1/2 cup carrots, finely chopped
+							1/2 cup potatoes, finely chopped
+							1/4 cup green bell pepper, finely chopped
+							1/4 cup red bell pepper, finely chopped
+							1 onion, finely chopped
+							2 cloves garlic, minced
+							1 egg
+							Salt and pepper to taste
+							Cooking oil for frying
+						Instructions:
+							In a bowl, mix ground pork, carrots, potatoes, bell peppers, onion, garlic, egg, salt, and pepper.
+							Shape the mixture into small balls (bola bola).
+							Heat oil in a pan and fry the bola bola until golden brown.
+							Drain excess oil on paper towels.
+							Serve hot with a dipping sauce of your choice." 
+					data-image="C:\Recipe Website Final\Images\L2.jpg">
+			<img src="Images/L2.jpg" alt="Recipe 2" onclick="openModal(this)">
+			<h3>Bola Bola</h3>
+			<button onclick="openModal(this)">View Recipe</button>
+		</div>
+	
+		<div class="recipe" data-title="Dinuguan" 
+		data-description="
+						Ingredients:
+							1/2 kg pork belly, diced
+							1 cup pork blood
+							1 onion, chopped
+							3 cloves garlic, minced
+							2 cups water
+							2 pieces green chili peppers
+							2 tablespoons vinegar
+							Salt and pepper to taste
+							Cooking oil
+						Instructions:
+							In a pan, sauté garlic and onion in oil until softened.
+							Add diced pork and cook until browned.
+							Pour water and bring to a boil. Simmer until pork is tender.
+							Add pork blood and stir continuously to avoid lumps.
+							Season with vinegar, salt, and pepper.
+							Add green chili peppers and simmer for a few more minutes.
+							Serve hot with rice." 
+					data-image="C:\Recipe Website Final\Images\L3.jpg">
+			<img src="Images/L3.jpg" alt="Recipe 3" onclick="openModal(this)">
+			<h3>Dinuguan</h3>
+			<button onclick="openModal(this)">View Recipe</button>
+		</div>
+	
+		<div class="recipe" data-title="Sisig" 
+		data-description="
+						Ingredients:
+							1/2 kg pig's ears, boiled and chopped
+							1/2 kg pork belly, boiled and chopped
+							1 onion, minced
+							3 cloves garlic, minced
+							2 pieces red chili peppers, minced
+							1/4 cup calamansi juice
+							3 tablespoons mayonnaise
+							Salt and pepper to taste
+							Cooking oil
+						Instructions:
+							In a pan, heat oil and sauté garlic and onion until fragrant.
+							Add chopped pig's ears and pork belly. Cook until browned.
+							Add red chili peppers, calamansi juice, mayonnaise, salt, and pepper. Mix well.
+							Cook for a few more minutes until the edges are crispy.
+							Serve hot on a sizzling plate." 
+					data-image="C:\Recipe Website Final\Images\L4.jpg">
+			<img src="Images/L4.jpg" alt="Recipe 4" onclick="openModal(this)">
+			<h3>Sisig</h3>
+			<button onclick="openModal(this)">View Recipe</button>
+		</div>
+
+		<div class="recipe" data-title="Chicharon Bulaklak" 
+		data-description="
+						Ingredients:
+							1 kg pork mesentery (bulaklak)
+							1 onion, chopped
+							3 cloves garlic, minced
+							1 teaspoon peppercorns
+							2 bay leaves
+							Salt to taste
+							Cooking oil for deep frying
+						Instructions:
+							Clean the pork mesentery thoroughly.
+							In a pot, combine pork mesentery, onion, garlic, peppercorns, bay leaves, and salt.
+							Add enough water to cover the ingredients and bring to a boil. Simmer until pork is tender.
+							Drain the pork and let it cool.
+							Heat oil in a deep fryer or large pot.
+							Deep fry the pork mesentery until crispy and golden brown.
+							Drain excess oil on paper towels.
+							Serve hot with vinegar dipping sauce." 
+					data-image="C:\Recipe Website Final\Images\L5.jpg">
+			<img src="Images/L5.jpg" alt="Recipe 5" onclick="openModal(this)">
+			<h3>Chicharon Bulaklak</h3>
+			<button onclick="openModal(this)">View Recipe</button>
+		</div>
+
+		<div class="recipe" data-title="Palabok" 
+		data-description="
+						Ingredients:
+							1/2 kg bihon noodles, cooked according to package instructions
+							1/2 kg ground pork
+							1 onion, chopped
+							3 cloves garlic, minced
+							2 cups shrimp broth
+							1 cup tinapa flakes (smoked fish)
+							1 cup chicharrón (crispy pork skin), crushed
+							1 cup shrimp, peeled and deveined
+							2 hard-boiled eggs, sliced
+							1/2 cup green onions, chopped
+							1/4 cup annatto oil
+							Salt and pepper to taste
+						Instructions:
+							In a pan, sauté garlic and onion in annatto oil until softened.
+							Add ground pork and cook until browned.
+							Pour in shrimp broth and let it simmer.
+							Add tinapa flakes and shrimp. Cook until shrimp turns pink.
+							Season with salt and pepper.
+							Assemble by placing bihon noodles on a plate, pouring the sauce over them, and topping with chicharrón, hard-boiled eggs, and green onions." 
+					data-image="C:\Recipe Website Final\Images\L6.jpg">
+			<img src="Images/L6.jpg" alt="Recipe 6" onclick="openModal(this)">
+			<h3>Palabok</h3>
+			<button onclick="openModal(this)">View Recipe</button>
+		</div>
+	
+		<div class="recipe" data-title="Pancit Bihon" 
+		data-description="
+							Ingredients:
+								1/2 kg bihon noodles, soaked in water
+								1/2 kg chicken, boiled and shredded
+								1/2 cup pork, sliced into thin strips
+								1/2 cup shrimp, peeled and deveined
+								1 onion, chopped
+								3 cloves garlic, minced
+								2 cups chicken broth
+								1 cup mixed vegetables (carrots, snow peas, cabbage), julienned
+								3 tablespoons soy sauce
+								2 tablespoons fish sauce
+								1/2 cup green onions, chopped
+								Cooking oil
+							Instructions:
+								In a pan, sauté garlic and onion in oil until fragrant.
+								Add sliced pork and cook until browned.
+								Add shredded chicken and shrimp. Cook until shrimp turns pink.
+								Pour in chicken broth and bring to a boil.
+								Stir in soy sauce and fish sauce.
+								Add soaked bihon noodles and mixed vegetables. Cook until noodles are tender.
+								Garnish with green onions.
+								Serve hot." 
+					data-image="C:\Recipe Website Final\Images\L7.jpg">
+			<img src="Images/L7.jpg" alt="Recipe 7" onclick="openModal(this)">
+			<h3>Pancit Bihon</h3>
+			<button onclick="openModal(this)">View Recipe</button>
+		</div>
+	
+		<div class="recipe" data-title="Ginataang Langka" 
+		data-description="
+						Ingredients:
+							2 cups young jackfruit (langka), sliced
+							1 cup shrimp, peeled and deveined
+							1 cup pork belly, sliced
+							1 onion, chopped
+							3 cloves garlic, minced
+							2 cups coconut milk
+							2 pieces red chili peppers
+							Salt and pepper to taste
+							Cooking oil
+						Instructions:
+							In a pan, sauté garlic and onion in oil until softened.
+							Add sliced pork and cook until browned.
+							Add shrimp and cook until shrimp turns pink.
+							Stir in young jackfruit slices.
+							Pour in coconut milk and bring to a simmer.
+							Add red chili peppers, salt, and pepper. Simmer until langka is tender.
+							Serve hot with rice." 
+					data-image="C:\Recipe Website Final\Images\L8.jpg">
+			<img src="Images/L8.jpg" alt="Recipe 8" onclick="openModal(this)">
+			<h3>Ginataang Langka</h3>
+			<button onclick="openModal(this)">View Recipe</button>
+		</div>
+	
+		<div class="recipe" data-title="Tinolang Manok" 
+		data-description="
+						Ingredients:
+							1 whole chicken, cut into serving pieces
+							1 thumb-sized ginger, sliced
+							1 onion, sliced
+							3 cloves garlic, minced
+							1 cup malunggay leaves or spinach
+							2 pieces green chili peppers
+							2 cups chicken broth
+							Fish sauce (patis) to taste
+							Cooking oil
+						Instructions:
+							In a pot, sauté garlic, ginger, and onion in oil until softened.
+							Add chicken pieces and cook until slightly browned.
+							Pour in chicken broth and bring to a boil.
+							Season with fish sauce.
+							Add green chili peppers and simmer until chicken is tender.
+							Stir in malunggay leaves or spinach.
+							Serve hot with rice." 
+					data-image="C:\Recipe Website Final\Images\L9.jpg">
+			<img src="Images/L9.jpg" alt="Recipe 9" onclick="openModal(this)">
+			<h3>Tinolang Manok</h3>
+			<button onclick="openModal(this)">View Recipe</button>
+		</div>
+	
+		<div class="recipe" data-title="Balbacua" 
+		data-description="
+						Ingredients:
+							1 kg chicken, cut into serving pieces
+							1 can pineapple chunks (reserve juice)
+							1 onion, sliced
+							3 cloves garlic, minced
+							1 cup coconut milk
+							1 bell pepper, sliced
+							Fish sauce (patis) and pepper to taste
+							Cooking oil
+						Instructions:
+							In a pan, heat oil and sauté garlic and onion until softened.
+							Add chicken pieces and cook until browned.
+							Pour in coconut milk and pineapple juice. Simmer until chicken is cooked.
+							Add pineapple chunks and bell pepper. Cook until bell pepper is tender.
+							Season with fish sauce and pepper to taste.
+							Serve hot with rice." 
+					data-image="C:\Recipe Website Final\Images\L10.jpg">
+			<img src="Images/L10.jpg" alt="Recipe 10" onclick="openModal(this)">
+			<h3>Balbacua</h3>
+			<button onclick="openModal(this)">View Recipe</button>
+		</div>
+	
+	</section>
+	
+	<!-- Recipe Modal -->
+	<div id="recipeModal" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<h2 id="modalTitle"></h2>
+			<img id="modalImage" src="" alt="Recipe Image">
+			<p id="modalDescription"></p>
+		</div>
+	</div>
+	
+		<script>
+			function openModal(element) {
+				// Extract data attributes from the clicked recipe element
+				const recipeElement = element.closest('.recipe');
+				const title = recipeElement.getAttribute('data-title');
+				const description = recipeElement.getAttribute('data-description');
+				const imageUrl = recipeElement.getAttribute('data-image');
+	
+				// Update modal content with recipe details
+				document.getElementById('modalTitle').innerText = title;
+				document.getElementById('modalDescription').innerText = description;
+				document.getElementById('modalImage').src = imageUrl;
+	
+				// Display the modal with maximized size
+				document.getElementById('recipeModal').style.display = 'block';
+			}
+	
+			// Update closeModal function to reset modal size
+			function closeModal() {
+				document.getElementById('recipeModal').style.display = 'none';
+			}
+		</script>
+</body>
+</html>

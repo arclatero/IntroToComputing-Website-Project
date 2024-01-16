@@ -1,0 +1,155 @@
+.Heading {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
+    }
+    
+    .Heading a {
+      float: left;
+      color: yellow;
+      text-align: center;
+      padding: 11px 30px;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 25px;
+      border-radius: 4px;
+    }
+    
+    .Heading .logo h1{
+        font-size: 50px; 
+        font-family: Calibiri;
+        text-align: left;
+        color: #f0ff6e;
+    }
+
+  
+    .Heading .menu li{
+      list-style: none;
+      display: inline-block;
+    }
+    
+    .Heading .menu li a{
+      display: block;
+      margin-left: 10px;
+      color: #E34234;
+      border-bottom: 4px solid transparent;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .Heading a:hover {
+      background-color: #f0ff6e;
+      color: black;
+    }
+    
+    .Heading a.active {
+      background-color: #f0ff6e;
+      color: black;
+    }
+    
+    .Navigation {
+      vertical-align: text-bottom;
+      float: right;
+    }
+    
+    @media screen and (max-width: 500px) {
+      .Heading a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+     
+    }
+
+body {
+        background-image: url(Images/breakfastpic.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        box-sizing: border-box;
+        
+      }
+
+.featured-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: auto;
+    padding: 20px;
+}
+
+.recipe {
+    background-color: gainsboro;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px; 
+}
+
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%; /* Adjust width as needed */
+  max-width: 600px; /* Set a maximum width for large screens */
+}
+.modal-content p {
+  overflow: auto;
+  text-align: left;
+  font-family: sans-serif; 
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+  }
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

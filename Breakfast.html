@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="styles2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+    <title>Filipino Food Recipes</title>
+   
+</head>
+
+<body>
+	<nav class = "Heading">
+		<div class="logo"><h1>Filipino Food Recipes</h1></div>
+		<ul class="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Breakfast.html"class="active">Breakfast</a></li>
+			<li><a href="Lunch.html">Lunch</a></li>
+			<li><a href="Dinner.html">Dinner</a></li>
+		</ul>
+	</nav>
+
+    <!-- for breakfast -->
+
+   <section class="featured-recipes">
+	<div class="recipe" data-title="Longsilog" 
+					data-description="
+					Ingredients:
+						Longganisa (Filipino sausage)
+						Sinangag (Garlic fried rice)
+						Itlog (Fried egg)
+					Procedure:
+						Cook the longganisa according to package instructions or until fully cooked.
+						Prepare sinangag by sautéing garlic in oil, adding cooked rice, and seasoning with salt.
+						Fry the egg to your liking.
+						Serve the longganisa, sinangag, and fried egg together." 
+			data-image="C:\Recipe Website Final\Images\Longsilog.jpg">
+		<img src="Images/Longsilog.jpg" alt="Recipe 1" onclick="openModal(this)">
+		<h3>Longsilog</h3>
+		<button onclick="openModal(this)">View Recipe</button>
+	</div>
+
+	<div class="recipe" data-title="Tocilog" 
+					data-description="
+					Ingredients:
+						Tocino (Sweet cured pork)
+						Sinangag (Garlic fried rice)
+						Itlog (Fried egg)
+					Procedure:
+						Cook the tocino according to package instructions or until caramelized and fully cooked.
+						Prepare sinangag as mentioned earlier.
+						Fry the egg to your liking.
+						Serve the tocino, sinangag, and fried egg together." 
+				data-image="C:\Recipe Website Final\Images\tocilog1.jpg">
+		<img src="Images/tocilog1.jpg" alt="Recipe 2" onclick="openModal(this)">
+		<h3>Tocilog</h3>
+		<button onclick="openModal(this)">View Recipe</button>
+	</div>
+
+	<div class="recipe" data-title="Tapsilog" 
+	data-description="
+					Ingredients:
+						500g thinly sliced beef sirloin or beef tapa cut		1/2 cup soy sauce
+						1/4 cup vinegar		1 tablespoon brown sugar
+						1 tablespoon minced garlic		1 teaspoon ground black pepper
+						1/2 teaspoon salt		2 tablespoons cooking oil
+					Sinangag (Garlic Fried Rice) Ingredients:
+						4 cups cooked jasmine rice (best if a bit dry or leftover)
+						4 cloves garlic, minced
+						4 eggs
+					Procedure:
+						Marinate Beef:
+						Combine soy sauce, vinegar, brown sugar, minced garlic. Marinate sliced beef for 15 minutes.
+						Cook marinated beef in oil until browned and tender.
+						Fry Rice: Sauté minced garlic in oil. Add cooked rice and stir-fry until slightly crispy.
+						Cook Eggs: Fry eggs in oil until desired doneness.
+						Assemble: Serve beef, rice, and eggs on a plate." 
+				data-image="C:\Recipe Website Final\Images\Tapsilog.jpg">
+		<img src="Images/Tapsilog.jpg" alt="Recipe 3" onclick="openModal(this)">
+		<h3>Tapsilog</h3>
+		<button onclick="openModal(this)">View Recipe</button>
+	</div>
+
+	<div class="recipe" data-title="Lazy Longanisa" 
+	data-description="
+					Ingredients:
+						500g ground pork
+						1/4 cup soy sauce
+						2 tablespoons vinegar
+						1 tablespoon brown sugar
+						1 tablespoon minced garlic
+						1 teaspoon black pepper
+						1/2 teaspoon salt (adjust to taste)
+						Cooking oil for frying
+					Procedure:
+						In a mixing bowl, combine ground pork, soy sauce, vinegar, brown sugar, minced garlic, black pepper, and salt. Mix well until all ingredients are evenly distributed.
+						Heat a pan over medium heat and add a bit of cooking oil to prevent sticking.
+						Form the seasoned ground pork mixture into small sausage-shaped patties.
+						Place the Longganisa patties in the heated pan, making sure not to overcrowd. Cook until both sides are browned and the pork is fully cooked.
+						Once cooked, transfer the Lazy Longganisa to a serving plate.
+						Serve hot with garlic fried rice (Sinangag) and fried eggs (Itlog) for a complete breakfast meal." 
+				data-image="C:\Recipe Website Final\Images\Lazy Longanisa.jpg">
+		<img src="Images/Lazy Longanisa.jpg" alt="Recipe 4" onclick="openModal(this)">
+		<h3>Lazy Longanisa</h3>
+		<button onclick="openModal(this)">View Recipe</button>
+	</div>
+
+	<div class="recipe" data-title="Pork Adobo Flakes" 
+	data-description="
+					Ingredients:
+						500g pork belly, boiled and shredded		1/2 cup soy sauce
+						1/4 cup vinegar		1 tablespoon oyster sauce
+						1 tablespoon brown sugar		1 teaspoon peppercorns
+						4 cloves garlic, minced			2 bay leaves
+						2 tablespoons cooking oil		Salt and pepper to taste		Cooking oil for frying
+					Procedure:
+						Boil and Shred Pork: Boil pork belly until tender. Let it cool, then shred the meat using two forks. Adobo Marinade: Mix soy sauce, vinegar, oyster sauce, brown sugar, peppercorns, minced garlic, and bay leaves in a bowl to create the Adobo marinade.
+						Marinate Shredded Pork:Combine shredded pork with the Adobo marinade. Ensure the meat is well-coated. Marinate for at least 30 minutes. Cook Adobo Flakes: In a pan, heat 2 tablespoons of cooking oil over medium heat.
+						Add marinated shredded pork and cook until crispy. Stir occasionally to prevent burning. Adjust seasoning with salt, pepper, or extra Adobo marinade for flavor.
+						Serve: Transfer the crispy and golden brown Adobo Flakes to a serving plate.
+						Optional: Garlic Rice and Fried Egg: Serve with garlic fried rice (Sinangag) and a fried egg (Itlog) for a complete meal." 
+				data-image="C:\Recipe Website Final\Images\Pork Adobo Flakes (Patil).jpg">
+		<img src="Images/Pork Adobo Flakes (Patil).jpg" alt="Recipe 5" onclick="openModal(this)">
+		<h3>Pork Adobo Flakes (Patil)</h3>
+		<button onclick="openModal(this)">View Recipe</button>
+	</div>
+
+	<div class="recipe" data-title="La Paz Batchoy" 
+	data-description="
+					Ingredients:
+						For the Broth:
+							500g pork belly, sliced into thin strips,	500g pork liver, sliced into thin strips
+							1 pork kidney, sliced into thin strips (optional),	1 onion, minced 4 cloves garlic, minced, 1 tablespoon cooking oil 10 cups beef or pork broth (or water), 2 tablespoons fish sauce, Salt and pepper to taste For the Toppings: Thin rice noodles (bihon), cooked according to package instructions, Chicharrón (crispy pork skin), crushed, Green onions, chopped
+							Fried garlic, Hard-boiled eggs, sliced Optional Garnish: Calamansi or lemon wedges, Fish sauce
+					Procedure:
+						Prepare the Broth: In a pot, sauté minced onion and garlic in cooking oil until fragrant.Add pork belly slices and cook until browned. Add pork liver and cook until browned. Pour in the broth (or water) and bring to a boil.
+						Season with fish sauce, salt, and pepper. Simmer for about 20-30 minutes.
+						Assemble the Bowl: In individual serving bowls, place a portion of cooked rice noodles. Pour the Broth: Ladle the hot broth over the noodles, ensuring a good balance of meat, liver, and kidney in each bowl.
+						Top with Toppings: Sprinkle crushed chicharrón, chopped green onions, and fried garlic over the soup. Add Optional Garnish:Garnish with sliced hard-boiled eggs. Serve Hot:La Paz Batchoy is best enjoyed while hot." 
+				data-image="C:\Recipe Website Final\Images\La Paz Batchoy.jpg">
+		<img src="Images/La Paz Batchoy.jpg" alt="Recipe 6" onclick="openModal(this)">
+		<h3>La Paz Batchoy</h3>
+		<button onclick="openModal(this)">View Recipe</button>
+	</div>
+
+	<div class="recipe" data-title="Pancake" 
+	data-description="
+						Ingredients:
+							2 cups all-purpose flour,	1/4 cup sugar
+							1 tablespoon baking powder,	1/2 teaspoon salt
+							1 1/2 cups evaporated milk,	2 large eggs
+							2 tablespoons melted butter or cooking oil,	1 teaspoon vanilla extract (optional)
+							Butter or cooking oil for greasing the pan
+						Procedure:
+							Prepare the Dry Ingredients: In a large mixing bowl, whisk together the all-purpose flour, sugar, baking powder, and salt.
+							Mix the Wet Ingredients: In a separate bowl, whisk together the evaporated milk, eggs, melted butter (or cooking oil), and vanilla extract if using.
+							Combine Wet and Dry Ingredients: Pour the wet ingredients into the dry ingredients. Mix until just combined. Do not overmix; it's okay if there are a few lumps.
+							Preheat the Pan: Preheat a non-stick skillet or griddle over medium heat. Grease it with butter or cooking oil.
+							Cook the Pancakes: Pour about 1/4 to 1/3 cup of batter onto the hot griddle for each pancake. Cook until bubbles form on the surface, then flip and cook the other side until golden brown.
+							Serve: Stack the pancakes on a plate and serve with your favorite toppings." 
+				data-image="C:\Recipe Website Final\Images\pancake.jpg">
+		<img src="Images/pancake.jpg" alt="Recipe 7" onclick="openModal(this)">
+		<h3>Pancake</h3>
+		<button onclick="openModal(this)">View Recipe</button>
+	</div>
+
+	<div class="recipe" data-title="Filipino Corned Beff Omelet" 
+	data-description="
+					Ingredients:
+						1 can (340g) corned beef
+						4 large eggs
+						1 medium-sized onion, finely chopped
+						1 medium-sized tomato, diced
+						2 cloves garlic, minced
+						Salt and pepper to taste
+						Cooking oil
+						Optional: chopped green onions for garnish
+					Procedure:
+						Prepare Corned Beef: Heat a bit of cooking oil in a pan over medium heat. Sauté minced garlic until fragrant. Add chopped onions and cook until softened. Add diced tomatoes and cook until they are slightly softened. Cook Corned Beef: Add the corned beef to the pan. Break it apart using a spatula and mix well with the sautéed vegetables. Cook until the corned beef is fully heated through. Whisk Eggs: In a bowl, whisk the eggs until well-beaten. Season with salt and pepper to taste. Combine Corned Beef and Eggs: Pour the beaten eggs over the cooked corned beef mixture in the pan. Allow the eggs to spread evenly. Cook the Omelet: Cook the omelet over medium heat until the edges start to set. Lift the edges with a spatula to let uncooked eggs flow underneath. Once the edges are set, flip the omelet to cook the other side. You can fold it in half or leave it flat, depending on your preference. Cook until the eggs are fully set and the omelet is golden brown. Serve: Slide the omelet onto a serving plate. Garnish with chopped green onions if desired.
+						Serve hot with rice or bread." 
+				data-image="C:\Recipe Website Final\Images\Filipino Corned Beff Omelet.jpg">
+		<img src="Images/Filipino Corned Beff Omelet.jpg" alt="Recipe 8" onclick="openModal(this)">
+		<h3>Filipino Corned Beff Omelet</h3>
+		<button onclick="openModal(this)">View Recipe</button>
+	</div>
+
+	<div class="recipe" data-title="Arroz Caldo" 
+	data-description="
+					Ingredients:
+						Chicken, cut into pieces
+						Ginger, minced
+						Garlic, minced
+						Rice
+						Chicken broth
+						Fish sauce or salt
+						Hard-boiled eggs
+						Spring onions, chopped
+						Crispy fried garlic (optional)
+					Procedure:
+						Sauté garlic and ginger in a pot.
+						Add chicken and cook until browned.
+						Add rice and stir for a few minutes.
+						Pour in chicken broth, season with fish sauce or salt, and simmer until the rice is cooked.
+						Serve hot with a hard-boiled egg, chopped spring onions, and crispy fried garlic." 
+				data-image="C:\Recipe Website Final\Images\arroz caldo.jpg">
+		<img src="Images/arroz caldo.jpg" alt="Recipe 9" onclick="openModal(this)">
+		<h3>Arroz Caldo</h3>
+		<button onclick="openModal(this)">View Recipe</button>
+	</div>
+
+	<div class="recipe" data-title="Champorado" 
+	data-description="
+					Ingredients:
+						1 cup glutinous rice (malagkit), 4 cups water
+						1/2 cup cocoa powder, 1 cup sugar (adjust to taste)
+						Pinch of salt, Evaporated milk or condensed milk for serving
+						Tuyo (dried fish) or dilis (anchovies), optional for a sweet-savory contrast
+					Procedure:
+						Cooking the Rice: Rinse the glutinous rice under cold water until the water runs clear.  In a pot, combine the glutinous rice and water. Bring to a boil, then reduce the heat to low and simmer until the rice is fully cooked and has a porridge-like consistency. Stir occasionally to prevent sticking. Adding Cocoa Mixture: In a bowl, dissolve the cocoa powder in a cup of warm water. Make sure there are no lumps. Add the cocoa mixture to the cooked glutinous rice, stirring continuously to combine. Sweetening the Champorado: Add sugar to the mixture, adjusting the amount to your desired sweetness. Add a pinch of salt to enhance the flavors. Simmering: Simmer the Champorado on low heat, continuing to stir to avoid burning or sticking. The consistency should be thick and smooth. Serving: Ladle the Champorado into bowls. Drizzle with evaporated milk or condensed milk according to your preference. Optional Toppings: For a traditional sweet-savory combination, serve Champorado with tuyo (dried fish) or dilis (anchovies) on the side. You can pan-fry the tuyo until crispy." 
+				data-image="C:\Recipe Website Final\Images\champorado.jpg">
+		<img src="Images/champorado.jpg" alt="Recipe 10" onclick="openModal(this)">
+		<h3>Champorado</h3>
+		<button onclick="openModal(this)">View Recipe</button>
+	</div>
+
+</section>
+
+<!-- Recipe Modal -->
+<div id="recipeModal" class="modal">
+	<div class="modal-content">
+		<span class="close" onclick="closeModal()">&times;</span>
+		<h2 id="modalTitle"></h2>
+		<img id="modalImage" src="" alt="Recipe Image">
+		<p id="modalDescription"></p>
+	</div>
+</div>
+
+	<script>
+        function openModal(element) {
+            // Extract data attributes from the clicked recipe element
+            const recipeElement = element.closest('.recipe');
+            const title = recipeElement.getAttribute('data-title');
+            const description = recipeElement.getAttribute('data-description');
+            const imageUrl = recipeElement.getAttribute('data-image');
+
+            // Update modal content with recipe details
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            document.getElementById('modalImage').src = imageUrl;
+
+            // Display the modal with maximized size
+            document.getElementById('recipeModal').style.display = 'block';
+        }
+
+        // Update closeModal function to reset modal size
+        function closeModal() {
+            document.getElementById('recipeModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
